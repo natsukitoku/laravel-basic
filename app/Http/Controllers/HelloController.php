@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 // あらかじめuse宣言を行うことで、クラス名を記述するだけで呼び出せるようになる
 use Illuminate\Http\Request;
 
-// ①
+// ③
 // view()へルパ関数でビューを指定するときはresources/viewsを省略し、「フォルダ名.ファイル名(.blade.phpは不要)」と記述。
 // ただしフォルダ直下に作成した場合はフォルダ名は不要
 class HelloController extends Controller {

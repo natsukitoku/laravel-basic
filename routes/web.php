@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 // ルーティングを設定するコントローラを宣言する
-// ②
+// ①
 use App\Http\Controllers\HelloController;
 
 use App\Http\Controllers\ProductController;
@@ -25,7 +25,7 @@ Route::get('/', function () {
 });
 
 // 「https://ドメイン名/hello」というURLにアクセスした時、HelloControllerに定義されているindex()という名前のアクションを実行したいという場合
-// ③
+//②
 // Route::HTTPリクエストメソッド名('URL', [コントローラ名::class, 'アクション名']);
 Route::get('/hello', [HelloController::class, 'index']);
 
